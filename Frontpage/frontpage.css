@@ -60,13 +60,14 @@ body {
     color: white;
     font-family: 'Oswald', sans-serif;
     padding:180px;
-    height: 500px;
+    height: 600px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
+
 }
 .intro h1{
     font-size: 100px;
@@ -81,16 +82,24 @@ body {
 
 /* ABOUT SECTION */
 .about{
-    display: flex;
+    display:flex;
     justify-content: center;
-    height: 500px;
+    height:800px;
     padding-left: 0;
     padding-right: 0;
-    padding-top:40px;
-    color:white;
+    color:black;
+    background-color: white;
+    padding-top: 100px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
 }
 .about h1{
     font-size: 50px;
+}
+
+.about p{
+    align-self: center;
 }
 
 /* PROJECTS */
@@ -101,28 +110,53 @@ body {
     padding-left: 0;
     padding-right: 0;
     padding-top:40px;
-    margin-top: 100px;
+    margin-top: 200px;
     margin-bottom: 20px;
 }
 
+.contact{
+    display: flex;
+    justify-content: center;
+    background-color: gray;
+    height: 500px;
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-border-top-left-radius: 30px;
+    -webkit-border-top-right-radius: 30px;
+    -moz-border-radius-topleft: 30px;
+    -moz-border-radius-topright: 30px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #5DADE2;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+  }
 /* SCROLLBAR */
-/* width */
 ::-webkit-scrollbar {
     width: 10px;
   }
-  
-  /* Track */
   ::-webkit-scrollbar-track {
     background: black;
-
   }
-  
-  /* Handle */
   ::-webkit-scrollbar-thumb {
     background: white;
   }
-  
-  /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: gray;
   }
